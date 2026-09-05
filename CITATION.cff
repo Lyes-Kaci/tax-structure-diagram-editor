@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software in academic or professional work, please cite it using these metadata."
+title: "Tax Structure Diagram Editor / Éditeur de schémas fiscaux"
+type: software
+authors:
+  - family-names: Kaci
+    given-names: Lyès
+    orcid: "https://orcid.org/0009-0000-5526-6138"
+version: 1.2.6
+date-released: 2026-08-24
+url: "https://fiscaliteinternationale.fr/schemas-fiscaux/"
+repository-code: "https://github.com/Lyes-Kaci/tax-structure-diagram-editor"
+abstract: >-
+  Browser-based editor for representing legal and tax structures through
+  entities, ownership links, financial flows, and non-financial flows. The
+  software processes diagrams locally and reaches no automated legal or tax
+  conclusion.
+keywords:
+  - tax law
+  - legal visualization
+  - ownership structure
+  - financial flows
+  - browser application

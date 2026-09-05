@@ -1,0 +1,26 @@
+name: Verify release candidate
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  node-and-integrity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm test
+
+  php-syntax:
+    runs-on: ubuntu-latest
+    container: php:7.4-cli
+    steps:
+      - uses: actions/checkout@v4
+      - run: php -l wordpress-plugin/schema-fiscal-outil/schema-fiscal-outil.php
+      - run: php -l wordpress-plugin/schema-fiscal-outil/index.php

@@ -1,0 +1,15 @@
+{
+  "name": "tax-structure-diagram-editor",
+  "version": "1.2.6",
+  "private": true,
+  "description": "Browser-based editor for legal and tax structure diagrams",
+  "license": "UNLICENSED",
+  "scripts": {
+    "test": "npm run test:source && npm run test:release",
+    "test:source": "node wordpress-plugin/schema-fiscal-outil/tests/static-regression.mjs",
+    "test:release": "node tests/release-integrity.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
